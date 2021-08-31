@@ -56,6 +56,38 @@
                     </label>
                 </div>
             </div>
+            <div class="row-content">
+                <label for="gender" class="label text">Choose Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class="text">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="text">Female</label>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others" class="text">Others</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label for="department" class="label text">Choose Department</label>
+                <div>
+                    <input type="checkbox" class="checkbox" id="hr" name="hr" value="HR">
+                    <label class="text" for="hr">HR</label>
+                    <input type="checkbox" class="checkbox" id="sales" name="sales" value="Sales">
+                    <label class="text" for="sales">Sales</label>
+                    <input type="checkbox" class="checkbox" id="finance" name="finance" value="Finance">
+                    <label class="text" for="finance">Finance</label>
+                    <input type="checkbox" class="checkbox" id="engineer" name="engineer" value="Engineer">
+                    <label class="text" for="engineer">Engineer</label>
+                    <input type="checkbox" class="checkbox" id="others" name="others" value="Others">
+                    <label class="text" for="others">Others</label>
+                </div>
+            </div>
+            <div class="row-content">
+                <label for="salary" class="label text salary-label">Choose Your Salary :</label>
+                <input class="input" type="range" name="salary" id="salary" min="25000" max="100000" step="1000"
+                    value="50000">
+                <output class="salary-output text" for="salary">50000</output>
+            </div>
         </form>
     </div>
 </body>

@@ -118,6 +118,10 @@ label {
     margin-left: 12px;
 }
 
+.salary-label {
+    width: 35%;
+}
+
 * {
     box-sizing: border-box;
 }
