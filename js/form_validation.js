@@ -38,6 +38,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const save = () => {
     try {
         let employeePayrollData = createEmployeePayroll();
+        createAndUpdateStorage(employeePayrollData);
     } catch (e) {
         return;
     }
@@ -77,6 +78,7 @@ const getInputElementValue = (id) => {
     let value = document.getElementById(id).value;
     return value;
 }
+
 function createAndUpdateStorage(empData) {
     let empList = JSON.parse(localStorage.getItem("empList"));
     if (empList != undefined) {
@@ -86,4 +88,32 @@ function createAndUpdateStorage(empData) {
     }
     alert(empList.toString());
     localStorage.setItem("empList", JSON.stringify(empList));
+}
+
+const resetForm = () => {
+    setValue('#name', '');
+    unsetSelectedValues('[name=profile]');
+    unsetSelectedValues('[name=gender]');
+    unsetSelectedValues('[name=department]');
+    resetSalary('#salary', '');
+    setValue('#notes', '');
+    setValue('#day', '1');
+    setValue('#month', 'January');
+    setValue('#year', '2020');
+}
+const unsetSelectedValues = (propertyValue) => {
+    let allItems = document.querySelectorAll(propertyValue);
+    allItems.forEach(item => {
+        item.checked = false;
+    });
+}
+const setValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.value = value;
+}
+const resetSalary = (id, value) => {
+    const element = document.querySelector(id);
+    element.value = value;
+    const outputSal = document.querySelector('.salary-output');
+    outputSal.textContent = "50000";
 }
