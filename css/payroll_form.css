@@ -133,6 +133,38 @@ select {
     background-color: transparent;
 }
 
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Arial;
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    background: transparent;
+    border: 1px solid navy;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    cursor: pointer;
+}
+
+.submitButton {
+    background-color: lightgreen;
+    margin-right: 30px;
+}
+
+.cancelButton {
+    text-decoration: none;
+    text-align: center;
+    margin-left: 140px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -144,5 +176,35 @@ select {
     .form {
         width: 85%;
         padding: 44px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        margin-top: 100px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .uploadButton {
+        justify-content: flex-start;
+    }
+    .profile-radio-button {
+        flex-flow: wrap;
+    }
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .submitButton {
+        margin: 0;
+    }
+    .buttonParent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
 }
