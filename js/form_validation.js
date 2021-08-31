@@ -77,3 +77,13 @@ const getInputElementValue = (id) => {
     let value = document.getElementById(id).value;
     return value;
 }
+function createAndUpdateStorage(empData) {
+    let empList = JSON.parse(localStorage.getItem("empList"));
+    if (empList != undefined) {
+        empList.push(empData);
+    } else {
+        empList = [empData];
+    }
+    alert(empList.toString());
+    localStorage.setItem("empList", JSON.stringify(empList));
+}
