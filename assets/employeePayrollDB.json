@@ -1,0 +1,44 @@
+{
+  "EmployeePayrollDB": [
+    {
+      "id": 2,
+      "_name": "Bill Gates",
+      "_gender": "male",
+      "_department": [
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "_salary": "50000",
+      "_startDate": "2019-10-29T00:00:00.000Z",
+      "_note": "Terrific Engineer",
+      "_profilePic": "../assets/profile-images/Ellipse -2.png"
+    },
+    {
+      "_name": "Shruti Kar Hasan",
+      "_gender": "female",
+      "_department": [
+        "Sales"
+      ],
+      "_salary": "40000",
+      "_startDate": "29 October 2019",
+      "_note": "",
+      "_profilePic": "../assets/profile-images/Ellipse -1.png",
+      "id": 3
+    },
+    {
+      "_name": "Yudhajit Koley",
+      "_profilePic": "../assets/profile-images/Ellipse -5.png",
+      "_gender": "male",
+      "_department": [
+        "Finance",
+        "Engineer",
+        "Others"
+      ],
+      "_salary": "77000",
+      "_note": "Its very nice when things go right !",
+      "_startDate": "2020-11-23T00:00:00.000Z",
+      "id": 4
+    }
+  ]
+}
