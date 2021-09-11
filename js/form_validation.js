@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             textError.textContent = e;
         }
     });
-    
     const startdate = document.querySelector('#startdate');
     const day = document.querySelector('#day');
     const month = document.querySelector('#month');
