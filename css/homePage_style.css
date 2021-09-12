@@ -114,8 +114,7 @@ td, th {
 }
 
 th {
-    background: blue 0% 0% no-repeat padding-box;
-    border-radius: 3px 3px 0px 8px;
+    background: rgb(50, 12, 185) 0% 0% no-repeat padding-box;
     text-align: left;
     font: normal normal medium 18px/24px Roboto;
     letter-spacing: 0px;
@@ -134,7 +133,7 @@ tr:not(:first-child) {
 td {
     font: normal normal normal 14px/21px Roboto;
     letter-spacing: 0px;
-    color: #3d3d3d;
+    color: black;
     opacity: 1;
 }
 
@@ -151,7 +150,7 @@ td img {
 }
 
 .dept-label {
-    background-color: rgb(247, 183, 183);
+    background-color: rgb(165, 248, 116);
     border-radius: 40%;
     width: fit-content;
     padding: 1px 7px;
