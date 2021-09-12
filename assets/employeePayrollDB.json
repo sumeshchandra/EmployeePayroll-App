@@ -1,18 +1,29 @@
 {
   "EmployeePayrollDB": [
     {
+      "id": 1,
+      "_name": "Mark",
+      "_gender": "male",
+      "_department": [
+        "Engineering",
+        "Finance"
+      ],
+      "_salary": "500000",
+      "_startDate": "29 Oct 2019",
+      "_note": "All In One",
+      "_profilePic": "../assets/profile-images/Ellipse -3.png"
+    },
+    {
       "id": 2,
       "_name": "Bill Gates",
       "_gender": "male",
       "_department": [
-        "Sales",
-        "Finance",
-        "Engineer"
+        "Engineering"
       ],
-      "_salary": "50000",
-      "_startDate": "2019-10-29T00:00:00.000Z",
+      "_salary": "500000",
+      "_startDate": "29 Oct 2019",
       "_note": "Terrific Engineer",
-      "_profilePic": "../assets/profile-images/Ellipse -2.png"
+      "_profilePic": "../assets/profile-images/Ellipse -1.png"
     },
     {
       "_name": "Shruti Kar Hasan",
@@ -20,25 +31,11 @@
       "_department": [
         "Sales"
       ],
-      "_salary": "40000",
-      "_startDate": "29 October 2019",
+      "_salary": "400000",
+      "_startDate": "29 Oct 2019",
       "_note": "",
       "_profilePic": "../assets/profile-images/Ellipse -1.png",
       "id": 3
-    },
-    {
-      "_name": "Yudhajit Koley",
-      "_profilePic": "../assets/profile-images/Ellipse -5.png",
-      "_gender": "male",
-      "_department": [
-        "Finance",
-        "Engineer",
-        "Others"
-      ],
-      "_salary": "77000",
-      "_note": "Its very nice when things go right !",
-      "_startDate": "2020-11-23T00:00:00.000Z",
-      "id": 4
     }
   ]
 }
