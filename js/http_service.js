@@ -4,7 +4,7 @@ function makeServiceCall(methodType, url, async = true, data = null) {
         xhr.onload = function () {
             // console.log(methodType + " State Change Called At : " + showTime() + " RS : " + xhr.readyState + " Status : " + xhr.status);
             if (xhr.readyState == 4) {
-                if (xhr.status == 200 || xhr.status == 201 || xhr.status==304) {
+                if (xhr.status == 200 || xhr.status == 201 || xhr.status == 304) {
                     resolve(xhr.responseText);
                 } else if (xhr.status >= 400) {
                     reject({
